@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Mind Reader</title>
+	<link href="https://fonts.googleapis.com/css?family=Eczar:400,600,800" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	<link rel="stylesheet" href="game.css">
+	
+</head>
+<body>
+	<div class="header">
+		<div class="container">
+			<div class="game_name">Mind Reader</div>
+			<div class="btn_grp">
+				<button data-div="how_play" class="btn">How to play</button>
+				<button data-div="credits" class="btn">Credits</button>
+			</div>
+		</div>
+	</div>
+	<div class="container main_container">
+		<div class="col-md-4 text_center">
+			<div class="result_icon">
+	  			<span></span>
+			</div>
+			<button class="try_again btn">Try Again</button>
+		</div>
+		
+		<div class="col-md-8 all_icons"></div>
+		<div class="col-md-8 result_text text-center">
+			Pretty impressive, Huh ? <br>
+			But the logic is pretty simple.
+		</div>
+	</div>
+	<footer class="text-center">
+		<div class="container">
+			<p>Developed by <a href="https://www.linkedin.com/in/mhrafi" target="_blank">MH Rafi</a></p>
+		</div>
+	</footer>
+
+	<div id="how_play" class="popup">
+		<a href="#" class="fa fa-close popup_close"></a>
+		<div class="content">
+			<h4>How to play</h4>
+			<p>Choose any two digit number, add together both digits and then subtract the total from original number.</p>
+			<p>Look at the chart and find relevant symbol for that number. Concentrate on the symbol and when you have it clearly on your mind click on the rectangle.</p>
+			<p>For example if you choose 71; 7 + 1 = 8, 71 minus 8 will give you the answer</p>
+		</div>
+	</div>
+	<div id="credits" class="popup">
+		<a href="#" class="fa fa-close popup_close"></a>
+		<div class="content">
+			<h4>Credits</h4>
+			<p>Original Flash game was developed by <a href="http://britton.disted.camosun.bc.ca/flashmindreader_sol.htm" target="_blank">Andy Naughton</a></p>
+			<p>Javascript version is developed by <a href="https://www.linkedin.com/in/mhrafi" target="_blank">MH Rafi</a></p>
+		</div>
+	</div>
+	<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+	<script src="game.js"></script>
+</body>
+</html>
