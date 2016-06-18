@@ -4,6 +4,37 @@ body {
 	font-size: 16px;
 }
 
+@-webkit-keyframes shake {
+  0% {
+    -webkit-transform: translate(0px, -40px);
+  }
+  12% {
+    -webkit-transform: translate(40px, -40px);
+  }
+  24% {
+    -webkit-transform: translate(40px, 0px);
+  }
+  37% {
+    -webkit-transform: translate(40px, 40px);
+  }
+  48% {
+    -webkit-transform: translate(0px, 40px);
+  }
+  60% {
+    -webkit-transform: translate(-40px, 40px);
+  }
+  74% {
+    -webkit-transform: translate(-40px, 0px);
+  }
+  86% {
+    -webkit-transform: translate(-40px, -40px);
+  }
+  100% {
+    -webkit-transform: translate(0px, -40px);
+  }
+
+}
+
 h1, h3, h4, h5, h6 {
 	font-weight: 600;
 }
@@ -62,6 +93,7 @@ p {
 .floatright {
 	float: right;
 }
+
 .header {
 	height: 54px;
 }
@@ -95,7 +127,10 @@ p {
   font-size: 92px;
   line-height: 280px;
 }
-
+.result_loader {
+  font-size: 32px;
+  -webkit-animation: shake 2000ms infinite;
+}
 .all_icons {}
 .single_icon {
 	font-size: 20px;
