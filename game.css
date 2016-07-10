@@ -2,6 +2,7 @@ body {
 	font-family: 'Eczar', serif;
 	font-weight: 400;
 	font-size: 16px;
+
 }
 
 @-webkit-keyframes shake {
@@ -34,6 +35,67 @@ body {
   }
 
 }
+@-moz-keyframes shake {
+  0% {
+    -moz-transform: translate(0px, -40px);
+  }
+  12% {
+    -moz-transform: translate(40px, -40px);
+  }
+  24% {
+    -moz-transform: translate(40px, 0px);
+  }
+  37% {
+    -moz-transform: translate(40px, 40px);
+  }
+  48% {
+    -moz-transform: translate(0px, 40px);
+  }
+  60% {
+    -moz-transform: translate(-40px, 40px);
+  }
+  74% {
+    -moz-transform: translate(-40px, 0px);
+  }
+  86% {
+    -moz-transform: translate(-40px, -40px);
+  }
+  100% {
+    -moz-transform: translate(0px, -40px);
+  }
+
+}
+
+@keyframes shake {
+  0% {
+    transform: translate(0px, -40px);
+  }
+  12% {
+    transform: translate(40px, -40px);
+  }
+  24% {
+    transform: translate(40px, 0px);
+  }
+  37% {
+    transform: translate(40px, 40px);
+  }
+  48% {
+    transform: translate(0px, 40px);
+  }
+  60% {
+    transform: translate(-40px, 40px);
+  }
+  74% {
+    transform: translate(-40px, 0px);
+  }
+  86% {
+    transform: translate(-40px, -40px);
+  }
+  100% {
+    transform: translate(0px, -40px);
+  }
+
+}
 
 h1, h3, h4, h5, h6 {
 	font-weight: 600;
@@ -54,6 +116,33 @@ p {
 
 .text_center {
  text-align: center;
+}
+.preloader {
+  text-align: center;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  top: 0;
+  left: 0;
+  z-index: 99999;
+}
+.preloader span {
+    display: block;
+    padding-top: 250px;
+}
+.pre_loader {
+  text-align: center;
+    position: absolute;
+    font-size: 32px;
+    top: 150px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    -webkit-animation: shake 1000ms infinite;
+    -moz-animation: shake 1000ms infinite;
+    -ms-animation: shake 1000ms infinite;
+    animation: shake 1000ms infinite;
 }
 .popup {
 	display: none;
@@ -98,7 +187,7 @@ p {
 	height: 54px;
 }
 .header .btn_grp {
-	width: 235px;
+	width: 385px;
 	float: right;
 }
 .game_name {
@@ -129,9 +218,11 @@ p {
 }
 .result_loader {
   font-size: 32px;
-  -webkit-animation: shake 2000ms infinite;
+  -webkit-animation: shake 1000ms infinite;
+    -moz-animation: shake 1000ms infinite;
+    -ms-animation: shake 1000ms infinite;
+    animation: shake 1000ms infinite;
 }
-.all_icons {}
 .single_icon {
 	font-size: 20px;
     margin-bottom: 5px;
@@ -146,6 +237,7 @@ p {
 .single_icon span.fa {}
 
 .result_text {
+  padding-top: 40px;
     font-size: 23px;
     font-weight: 800;
 }
@@ -154,4 +246,34 @@ footer {
 	border-top: 1px solid #eee;
     margin: 40px 0 0;
     padding: 20px 0 10px;
+}
+
+.share_link {
+    text-align: center;
+    display: inline-block;
+    font-size: 21px;
+    margin: 6px;
+}
+
+@media (max-width: 991px) {
+  .all_icons .col-xs-6 {
+    margin: 20px 0 0;
+  }
+}
+
+@media (max-width: 540px) {
+  .header {
+    height: auto;
+  }
+  .game_name {
+    float: none;
+    text-align: center;
+  }
+  .header .btn_grp {
+    float: none;
+    margin: auto;
+  }
+  .all_icons .col-xs-6 {
+    margin: 40px 0 0;
+  }
 }

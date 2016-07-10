@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<title>Mind Reader</title>
 	<link href="https://fonts.googleapis.com/css?family=Eczar:400,600,800" rel="stylesheet">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
@@ -10,12 +11,18 @@
 	
 </head>
 <body>
+	<div class="preloader">
+		<i class="fa fa-magic pre_loader"></i>
+		<span>Loading...Please Be Patient</span>
+	</div>
+
 	<div class="header">
 		<div class="container">
 			<div class="game_name">Mind Reader</div>
 			<div class="btn_grp">
 				<button data-div="how_play" class="btn">How to play</button>
 				<button data-div="credits" class="btn">Credits</button>
+				<button data-div="share" class="btn">Share</button>
 			</div>
 		</div>
 	</div>
@@ -25,13 +32,13 @@
 	  			<span></span>
 	  			<i class="fa fa-magic result_loader"></i>
 			</div>
-			<button class="try_again btn">Try Again</button>
+			<button class="try_again btn">Play Again</button>
 		</div>
 		
 		<div class="col-md-8 all_icons"></div>
+
 		<div class="col-md-8 result_text text-center">
 			Pretty impressive, Huh ? <br>
-			But the logic is pretty simple.
 		</div>
 	</div>
 	<footer class="text-center">
@@ -55,6 +62,17 @@
 			<h4>Credits</h4>
 			<p>Original Flash game was developed by <a href="http://britton.disted.camosun.bc.ca/flashmindreader_sol.htm" target="_blank">Andy Naughton</a></p>
 			<p>Javascript version is developed by <a href="https://www.linkedin.com/in/mhrafi" target="_blank">MH Rafi</a></p>
+		</div>
+	</div>
+	<div id="share" class="popup">
+		<a href="#" class="fa fa-close popup_close"></a>
+		<div class="content">
+			<h4>Share with your friends</h4>
+			<br>
+			<a href="https://www.facebook.com/sharer/sharer.php?u=" class="share_link"><i class="fa fa-facebook"></i></a>
+			<a href="https://twitter.com/home?status=" class="share_link"><i class="fa fa-twitter"></i></a>
+			<a href="https://plus.google.com/share?url=" class="share_link"><i class="fa fa-google-plus"></i></a>
+			<a href="https://plus.google.com/share?url=" class="share_link"><i class="fa fa-linkedin"></i></a>
 		</div>
 	</div>
 	<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
